@@ -15,16 +15,19 @@ export function NavButton({
 }: Props) {
     return (
         <Button
-            variant:"ghost"
-            size:"icon"
-            aria-label={label}
+            variant:ghost
+            size:icon
+            label={label}
             title={label}
             className="rounded-full"
             asChild
-        >{ href? (
-            <Link href={href}>
-                <Icon />
-            </Link>
+        >
+            { href ? (
+                <Link href={href}>
+                    <Icon />
+                </Link>
+        ) : (
+            <Icon />
         )}
         </Button>
     )
