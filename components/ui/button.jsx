@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils;"
 
 export default function Button({ variant,
     size,
-    label, title, asChild, children, leftElement, rightElement, ...props }) {
+    label, title, asChild, children, className }) {
     const Comp = asChild ? Slot : "button";
     return (
         <Comp {...props}>

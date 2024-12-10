@@ -15,8 +15,8 @@ export function NavButton({
 }: Props) {
     return (
         <Button
-            variant:ghost
-            size:icon
+            variant="ghost"
+            size="icon" 
             label={label}
             title={label}
             className="rounded-full"
